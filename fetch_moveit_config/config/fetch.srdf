@@ -33,6 +33,58 @@
         <link name="l_gripper_finger_link" />
         <link name="r_gripper_finger_link" />
     </group>
+
+    <!-- <group_state name="home" group="arm">
+      <joint name="shoulder_pan_joint" value="-1.47" />
+      <joint name="shoulder_lift_joint" value="-0.84" />
+      <joint name="upperarm_roll_joint" value="-2.6" />
+      <joint name="elbow_flex_joint" value="-2.02" />
+      <joint name="forearm_roll_joint" value="-0.63" />
+      <joint name="wrist_flex_joint" value="-1.62" />
+      <joint name="wrist_roll_joint" value="0.23" />
+    </group_state> -->
+
+    <group_state name="home" group="arm">
+      <joint name="shoulder_pan_joint" value="-1.54" />
+      <joint name="shoulder_lift_joint" value="-0.036" />
+      <joint name="upperarm_roll_joint" value="-1.055" />
+      <joint name="elbow_flex_joint" value="-1.53" />
+      <joint name="forearm_roll_joint" value="-0.535" />
+      <joint name="wrist_flex_joint" value="-1.42" />
+      <joint name="wrist_roll_joint" value="2.398" />
+    </group_state>
+
+
+    <group_state name="tucked" group="arm">
+      <joint name="shoulder_pan_joint" value="0" />
+      <joint name="shoulder_lift_joint" value="0" />
+      <joint name="upperarm_roll_joint" value="0" />
+      <joint name="elbow_flex_joint" value="0" />
+      <joint name="forearm_roll_joint" value="0" />
+      <joint name="wrist_flex_joint" value="0" />
+      <joint name="wrist_roll_joint" value="0" />
+    </group_state>
+
+    <group_state name="rightup" group="arm">
+      <joint name="shoulder_pan_joint" value="-1.2055395236633302" />
+      <joint name="shoulder_lift_joint" value="-0.5396941123474122" />
+      <joint name="upperarm_roll_joint" value="-2.7790396080566406" />
+      <joint name="elbow_flex_joint" value="1.7338326402587891" />
+      <joint name="forearm_roll_joint" value="-1.23076654372406" />
+      <joint name="wrist_flex_joint" value="0.4032441025817871" />
+      <joint name="wrist_roll_joint" value="2.698633439664307" />
+    </group_state>
+
+    <group_state name="leftup" group="arm">
+      <joint name="shoulder_pan_joint" value="1.0053102382995605" />
+      <joint name="shoulder_lift_joint" value="-0.2570574698913574" />
+      <joint name="upperarm_roll_joint" value="-0.9440153108192444" />
+      <joint name="elbow_flex_joint" value="-2.166314320953369" />
+      <joint name="forearm_roll_joint" value="2.042365184448242" />
+      <joint name="wrist_flex_joint" value="-1.1499113196289064" />
+      <joint name="wrist_roll_joint" value="0.5989971233648682" />
+    </group_state>
+
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="wrist_roll_link" group="gripper" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
